@@ -1,0 +1,61 @@
+{
+  "name": "jeff-personal-blog",
+  "private": true,
+  "type": "module",
+  "imports": {
+    "#/*": "./src/*"
+  },
+  "scripts": {
+    "dev": "vite dev --port 3000",
+    "generate-routes": "tsr generate",
+    "generate-bulletins": "bun run scripts/generate-bulletins.ts",
+    "import-medium": "bun run scripts/import-medium.ts",
+    "generate-og": "bun run scripts/generate-og.tsx",
+    "generate-sitemap": "bun run scripts/generate-sitemap.ts",
+    "build": "bun run generate-sitemap && vite build && bun run scripts/copy-content-for-deploy.ts",
+    "start": "HOST=0.0.0.0 node .output/server/index.mjs",
+    "preview": "vite preview",
+    "deploy": "agentuity deploy",
+    "lint": "eslint",
+    "format": "prettier --write . && eslint --fix",
+    "check": "prettier --check ."
+  },
+  "dependencies": {
+    "@agentuity/vite": "^3.1.14",
+    "@tailwindcss/typography": "^0.5.20",
+    "@tailwindcss/vite": "^4.1.18",
+    "@tanstack/react-devtools": "latest",
+    "@tanstack/react-router": "latest",
+    "@tanstack/react-router-devtools": "latest",
+    "@tanstack/react-start": "latest",
+    "gray-matter": "^4.0.3",
+    "nitro": "^3.0.260610-beta",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "@tanstack/devtools-vite": "latest",
+    "@tanstack/eslint-config": "latest",
+    "@tanstack/router-cli": "^1.132.0",
+    "@types/node": "^26.1.1",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@types/turndown": "^5.0.6",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^9.20.0",
+    "prettier": "^3.8.1",
+    "sharp": "^0.35.3",
+    "turndown": "^7.2.4",
+    "typescript": "^6.0.2",
+    "vite": "^8.0.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "lightningcss"
+    ]
+  }
+}

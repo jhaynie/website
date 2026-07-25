@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1c171c"/>
+      <stop offset="55%" stop-color="#141214"/>
+      <stop offset="100%" stop-color="#101418"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="20%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="rgba(180,70,140,0.22)"/>
+      <stop offset="100%" stop-color="rgba(180,70,140,0)"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="85%" cy="70%" r="45%">
+      <stop offset="0%" stop-color="rgba(80,200,180,0.12)"/>
+      <stop offset="100%" stop-color="rgba(80,200,180,0)"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+
+  <!-- identity -->
+  <text x="96" y="88" fill="#f0ebe6" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="28" font-weight="700" letter-spacing="-0.4">Jeff Haynie</text>
+  <text x="96" y="118" fill="#a89f96" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" letter-spacing="0.5">@jhaynie</text>
+
+  <!-- load line -->
+  <text x="96" y="190" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" letter-spacing="1">
+    <tspan fill="#7a746e">LOAD"*",8,1</tspan>
+    <tspan fill="#6ec9c0" dx="14">RUN</tspan>
+  </text>
+
+  <!-- hero title + phosphor cursor -->
+  <text x="96" y="250" fill="#f0ebe6" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="48" font-weight="700" letter-spacing="-1.2"><tspan x="96" dy="0">I write about software and</tspan><tspan x="96" dy="58">being a full-time builder.</tspan></text>
+  <rect x="96" y="320" width="18" height="42" fill="#7dffb0" opacity="0.95"/>
+
+  <!-- subtext -->
+  <text x="96" y="414" fill="#a89f96" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="22" font-weight="400"><tspan x="96" dy="0">Founder, builder and 80s computer kid. I write about</tspan><tspan x="96" dy="32">building software, the future of AI and Agentic</tspan><tspan x="96" dy="32">Business, and the long arc from a blinking cursor to</tspan><tspan x="96" dy="32">production systems.</tspan></text>
+
+  <!-- footer rail -->
+  <rect x="0" y="576" width="1200" height="54" fill="rgba(0,0,0,0.35)"/>
+  <text x="96" y="610" fill="#7a746e" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" letter-spacing="1.5">BULLETINS · CATALOG · SYSOP</text>
+  <text x="1104" y="610" text-anchor="end" fill="#7a746e" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" letter-spacing="1">SYS INIT 1971</text>
+</svg>
