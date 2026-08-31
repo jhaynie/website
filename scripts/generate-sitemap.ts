@@ -5,9 +5,12 @@
  */
 import fs from 'node:fs'
 import path from 'node:path'
-import { getAllBulletins } from '../src/lib/bulletins.server'
+import { getAllBulletinsFromDisk as getAllBulletins } from '../src/lib/bulletins-disk'
 
-const siteUrl = (process.env.VITE_SITE_URL ?? 'https://jhaynie.dev').replace(/\/$/, '')
+const siteUrl = (process.env.VITE_SITE_URL ?? 'https://jhaynie.dev').replace(
+  /\/$/,
+  '',
+)
 const out = path.join(process.cwd(), 'public', 'sitemap.xml')
 
 const staticPaths = ['/', '/bulletins']
