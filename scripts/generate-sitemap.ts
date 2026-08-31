@@ -5,7 +5,7 @@
  */
 import fs from 'node:fs'
 import path from 'node:path'
-import { getAllBulletinsFromDisk as getAllBulletins } from '../src/lib/bulletins-disk'
+import { getAllBulletinsFromDisk as getAllBulletins } from '../src/lib/bulletins-disk.ts'
 
 const siteUrl = (process.env.VITE_SITE_URL ?? 'https://jhaynie.dev').replace(
   /\/$/,
